@@ -1,0 +1,29 @@
+Conditions Générales d'Utilisation de l'Application Fennec Fast
+Date d'entrée en vigueur : 4 octobre 2025
+
+1. Acceptation des Conditions
+Bienvenue sur "Fennec Fast" (l'«Application»), une application mobile d'entraînement au Soroban fournie par [Votre Nom/Nom de l'Entreprise] (l'«Éditeur»). En téléchargeant ou en utilisant l'Application, vous acceptez d'être lié par les présentes Conditions Générales d'Utilisation (les «Conditions»). Si vous n'acceptez pas ces Conditions, vous ne devez pas utiliser l'Application.
+
+2. Objet de l'Application
+L'Application est un outil éducatif destiné à aider les utilisateurs à s'entraîner aux techniques de calcul mental rapide basées sur le Soroban (ou abaque japonais). L'Application est fournie «telle quelle» et à titre purement informatif et d'entraînement.
+
+3. Licence d'Utilisation
+Octroi de Licence : L'Éditeur vous accorde une licence limitée, non exclusive, non transférable et révocable pour utiliser l'Application à des fins personnelles et non commerciales sur un appareil mobile que vous possédez ou contrôlez, sous réserve de votre respect des présentes Conditions.
+
+Restrictions : Il vous est interdit de vendre, louer, distribuer, modifier, décompiler ou désassembler l'Application, ou de créer des œuvres dérivées basées sur celle-ci.
+
+4. Fonctionnalités et Contenu
+Propriété : Tout le contenu, y compris les textes, graphiques, scores, bases de données d'entraînement, et le code source de l'Application, est la propriété de l'Éditeur et protégé par les lois sur le droit d'auteur.
+
+Scores et Progression : Les scores, les données de progression et les paramètres personnalisés sont stockés localement sur votre appareil. L'Éditeur n'est pas responsable de la perte de ces données en cas de dysfonctionnement de l'appareil ou de désinstallation de l'Application.
+
+5. Limitation de Responsabilité
+L'Éditeur décline toute responsabilité pour tout dommage direct ou indirect résultant de l'utilisation ou de l'incapacité d'utiliser l'Application. Bien que l'Application soit un outil d'entraînement, l'Éditeur ne garantit pas la performance, l'exactitude ou les résultats des utilisateurs découlant de l'utilisation de l'Application.
+
+6. Modifications des Conditions
+L'Éditeur se réserve le droit de modifier ces Conditions à tout moment. La version mise à jour sera publiée sur cette page. En continuant à utiliser l'Application après la publication des modifications, vous acceptez les nouvelles Conditions.
+
+7. Contactez-Nous
+Pour toute question concernant ces Conditions, veuillez contacter l'Éditeur à :
+
+E-mail : [gamesinogh@gmail.com]
