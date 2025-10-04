@@ -1,0 +1,37 @@
+Règles de Confidentialité de "Fennec Fast"
+Date d'entrée en vigueur : 4 octobre 2025
+
+1. Introduction
+Ces Règles de Confidentialité décrivent la manière dont l'application mobile "Fennec Fast" (ci-après, "l'Application") gérée par [Votre Nom/Nom de l'Entreprise] (ci-après, "Nous") collecte, utilise et protège vos informations.
+
+2. Collecte et Utilisation des Informations Personnelles
+L'Application "Fennec Fast" est une application éducative et utilitaire et ne collecte aucune information personnelle identifiable (telle que nom, adresse e-mail, emplacement, etc.) auprès de ses utilisateurs.
+
+Données Non Collectées : Nous ne collectons, n'utilisons et ne partageons pas de données personnelles. L'utilisation de l'Application est entièrement anonyme.
+
+Données Collectées Automatiquement : L'Application peut collecter des informations techniques non personnelles liées à l'appareil, telles que le modèle de l'appareil, la version du système d'exploitation et la langue. Ces données sont utilisées uniquement pour améliorer la compatibilité et les performances de l'Application et ne sont pas liées à un utilisateur spécifique.
+
+3. Utilisation des Données de Performance (Scores)
+L'Application peut enregistrer vos scores et votre progression (par exemple, votre vitesse de calcul au soroban). Ces données :
+
+Sont stockées localement sur votre appareil et ne sont pas transmises à nos serveurs.
+
+Sont utilisées uniquement pour vous fournir un historique de votre progression personnelle et des statistiques.
+
+4. Services Tiers
+L'Application peut intégrer des services tiers, principalement pour :
+
+Analyses d'utilisation (Analyse d'audience) : Pour comprendre comment les utilisateurs interagissent avec l'Application (par exemple, l'écran le plus visité). Ces services ne reçoivent que des données anonymes et agrégées.
+
+Publicités : Si l'Application affiche des publicités, celles-ci sont fournies par [Nom du Réseau Publicitaire, ex: Google AdMob]. Veuillez consulter les règles de confidentialité de ce fournisseur pour en savoir plus sur la collecte de données publicitaires.
+
+5. Sécurité
+Étant donné que nous ne collectons pas de données personnelles, il n'y a pas de risque de fuite de données personnelles. Nous prenons toutes les mesures nécessaires pour assurer la sécurité des données non personnelles collectées.
+
+6. Modifications des Règles de Confidentialité
+Nous pouvons mettre à jour ces Règles de Confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle version sur cette page.
+
+7. Contactez-Nous
+Si vous avez des questions concernant ces Règles de Confidentialité, veuillez nous contacter à :
+
+Par e-mail : [gamesinogh@gmail.com]
