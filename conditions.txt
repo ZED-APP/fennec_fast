@@ -1,8 +1,8 @@
-Conditions Générales d'Utilisation de l'Application Fennec Fast
+Conditions Générales d'Utilisation de l'Application
 Date d'entrée en vigueur : 4 octobre 2025
 
 1. Acceptation des Conditions
-Bienvenue sur "Fennec Fast" (l'«Application»), une application mobile d'entraînement au Soroban fournie par [Votre Nom/Nom de l'Entreprise] (l'«Éditeur»). En téléchargeant ou en utilisant l'Application, vous acceptez d'être lié par les présentes Conditions Générales d'Utilisation (les «Conditions»). Si vous n'acceptez pas ces Conditions, vous ne devez pas utiliser l'Application.
+Bienvenue sur l'«Application», une application mobile d'entraînement au Soroban fournie par ZED APP. En téléchargeant ou en utilisant l'Application, vous acceptez d'être lié par les présentes Conditions Générales d'Utilisation (les «Conditions»). Si vous n'acceptez pas ces Conditions, vous ne devez pas utiliser l'Application.
 
 2. Objet de l'Application
 L'Application est un outil éducatif destiné à aider les utilisateurs à s'entraîner aux techniques de calcul mental rapide basées sur le Soroban (ou abaque japonais). L'Application est fournie «telle quelle» et à titre purement informatif et d'entraînement.
