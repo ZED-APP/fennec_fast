@@ -73,7 +73,6 @@
         color: #999;
     }
 
-    /* Arabic section */
     .rtl {
         direction: rtl;
         text-align: right;
@@ -86,116 +85,173 @@
         margin-top: 20px;
     }
 </style>
+
+<script>
+function setLang(lang) {
+    const ar = document.getElementById("arabic");
+    const en = document.getElementById("english");
+
+    if (lang === "ar") {
+        ar.style.display = "block";
+        en.style.display = "none";
+        document.body.dir = "rtl";
+        ar.scrollIntoView();
+    } else {
+        ar.style.display = "none";
+        en.style.display = "block";
+        document.body.dir = "ltr";
+        en.scrollIntoView();
+    }
+}
+
+// auto-detect hash (#arabic or #english)
+window.onload = function () {
+    if (location.hash === "#english") {
+        setLang("en");
+    } else {
+        setLang("ar");
+    }
+};
+</script>
+
 </head>
 
 <body>
 
 <div class="container">
+<div class="card">
 
-    <div class="card">
-        <h1>Privacy Policy | سياسة الخصوصية</h1>
-        <div class="subtitle">
-            Fennec Fast Mental Arithmetic<br>
-            Last updated: 30/12/2025
-        </div>
+<h1>Privacy Policy | سياسة الخصوصية</h1>
+<div class="subtitle">
+    Fennec Fast Mental Arithmetic<br>
+    Last updated: 12/01/2026
+</div>
 
-        <!-- Arabic -->
-        <div class="rtl">
-            <h2>مقدمة</h2>
-            <p>
-                نحن في <strong>الفنك السريع للحساب الذهني</strong> نحترم خصوصية المستخدمين
-                ونلتزم بحماية بياناتهم الشخصية. توضّح سياسة الخصوصية هذه كيفية جمع
-                واستخدام وحماية المعلومات عند استخدام التطبيق.
-            </p>
 
-            <h2>المعلومات التي نقوم بجمعها</h2>
-            <ul>
-                <li>الاسم أو اسم المستخدم</li>
-                <li>البريد الإلكتروني</li>
-                <li>نوع الحساب (مدرب / متدرب)</li>
-            </ul>
+<!-- ================= English ================= -->
+<div id="english">
 
-            <div class="note">
-                ❗ لا نقوم بجمع أو تخزين صور المستخدمين.
-            </div>
+<h2>Introduction</h2>
+<p>
+At <strong>Fast Mental Math</strong>, we respect users’ privacy and are committed
+to protecting personal data.
+</p>
 
-            <h2>بيانات التمارين</h2>
-            <ul>
-                <li>إعدادات التمارين التي يرسلها المدرب</li>
-                <li>نتائج التمارين (السرعة، الدقة، عدد التمارين)</li>
-            </ul>
+<h2>Information We Collect</h2>
+<ul>
+<li>Name or username</li>
+<li>Email address</li>
+<li>Account type (Trainer / Trainee)</li>
+<li>The trainee's date of birth</li>
+</ul>
 
-            <h2>ما لا نقوم بجمعه</h2>
-            <ul>
-                <li>الصور</li>
-                <li>المحادثات أو الرسائل</li>
-                <li>الموقع الجغرافي</li>
-                <li>البيانات الحساسة</li>
-            </ul>
+<h2>Children & Family Policy</h2>
+<p>
+This application is not intended for children under the age of 13.
+Users must be at least 13 years old to create an account and use the app.
+</p>
+<ul>
+<li>We do not knowingly collect personal data from children under 13.</li>
+<li>If we become aware that a child under 13 has provided personal data, we will delete it immediately.</li>
+<li>No advertising, tracking, or profiling of children is performed.</li>
+</ul>
 
-            <h2>التخزين والحماية</h2>
-            <p>
-                يتم تخزين البيانات باستخدام Firebase Realtime Database و/أو Firestore
-                مع تطبيق قواعد أمان Firebase.
-            </p>
 
-            <h2>التواصل معنا</h2>
-            <p class="email">📧 gamesinogh@gmail.com</p>
-        </div>
+<div class="note">❗ We do not collect or store user photos.</div>
 
-        <div class="divider">──────── English ────────</div>
+<h2>Training Data</h2>
+<ul>
+<li>Training settings sent by trainers</li>
+<li>Training results (speed, accuracy, exercises)</li>
+</ul>
 
-        <!-- English -->
-        <div>
-            <h2>Introduction</h2>
-            <p>
-                At <strong>Fast Mental Math</strong>, we respect users’ privacy and are
-                committed to protecting personal data. This Privacy Policy explains how
-                information is collected and used.
-            </p>
+<h2>Information We Do Not Collect</h2>
+<ul>
+<li>Photos</li>
+<li>Chat messages</li>
+<li>Contacts</li>
+<li>Location data</li>
+<li>Sensitive personal data</li>
+</ul>
 
-            <h2>Information We Collect</h2>
-            <ul>
-                <li>Name or username</li>
-                <li>Email address</li>
-                <li>Account type (Trainer / Trainee)</li>
-            </ul>
+<h2>Data Storage & Security</h2>
+<p>
+Data is stored using Firebase Realtime Database and/or Firestore and protected
+with Firebase Security Rules.
+</p>
 
-            <div class="note">
-                ❗ We do not collect or store user photos.
-            </div>
+<h2>Contact Us</h2>
+<p class="email">📧 gamesinogh@gmail.com</p>
+"-----------------
 
-            <h2>Training Data</h2>
-            <ul>
-                <li>Training settings sent by trainers</li>
-                <li>Training results (speed, accuracy, exercises)</li>
-            </ul>
 
-            <h2>Information We Do Not Collect</h2>
-            <ul>
-                <li>Photos</li>
-                <li>Chat messages</li>
-                <li>Contacts</li>
-                <li>Location data</li>
-                <li>Sensitive personal data</li>
-            </ul>
+<!-- ================= Arabic ================= -->
+<h1 id="arabic">Privacy Policy | سياسة الخصوصية</h1>
+<div class="subtitle" >
+    Fennec Fast Mental Arithmetic<br>
+    Last updated: 12/01/2026
+</div>
+<div  class="rtl">
 
-            <h2>Data Storage & Security</h2>
-            <p>
-                Data is stored using Firebase Realtime Database and/or Firestore and
-                protected with Firebase Security Rules.
-            </p>
+<h2>مقدمة</h2>
+<p>
+نحن في <strong>الفنك السريع للحساب الذهني</strong> نحترم خصوصية المستخدمين
+ونلتزم بحماية بياناتهم الشخصية.
+</p>
 
-            <h2>Contact Us</h2>
-            <p class="email">📧 gamesinogh@gmail.com</p>
-        </div>
+<h2>المعلومات التي نقوم بجمعها</h2>
+<ul>
+<li>الاسم أو اسم المستخدم</li>
+<li>البريد الإلكتروني</li>
+<li>نوع الحساب (مدرب / متدرب)</li>
+<li>تاريخ ميلاد المتدرب</li>
+</ul>
 
-    </div>
+<h2>سياسة العائلة والأطفال</h2>
+<p>
+هذا التطبيق غير مخصص للأطفال دون سن 13 عامًا.
+يجب أن يكون عمر المستخدم 13 سنة على الأقل لإنشاء حساب واستخدام التطبيق.
+</p>
+<ul>
+<li>لا نقوم عن قصد بجمع أي بيانات شخصية من الأطفال دون سن 13.</li>
+<li>في حال اكتشاف أن طفلًا دون 13 سنة قد قدم بيانات شخصية، سيتم حذفها فورًا.</li>
+<li>لا يتم عرض إعلانات أو تنفيذ أي تتبع أو تحليل سلوكي للأطفال.</li>
+</ul>
 
-    <footer>
-        © 2025 Fennec Fast Mental Arithmetic
-    </footer>
+<div class="note">❗ لا نقوم بجمع أو تخزين صور المستخدمين.</div>
 
+<h2>بيانات التمارين</h2>
+<ul>
+<li>إعدادات التمارين التي يرسلها المدرب</li>
+<li>نتائج التمارين (السرعة، الدقة، عدد التمارين)</li>
+</ul>
+
+<h2>ما لا نقوم بجمعه</h2>
+<ul>
+<li>الصور</li>
+<li>المحادثات أو الرسائل</li>
+<li>الموقع الجغرافي</li>
+<li>البيانات الحساسة</li>
+</ul>
+
+<h2>التخزين والحماية</h2>
+<p>
+يتم تخزين البيانات باستخدام Firebase Realtime Database و/أو Firestore
+مع تطبيق قواعد أمان Firebase.
+</p>
+
+<h2>التواصل معنا</h2>
+<p class="email">📧 gamesinogh@gmail.com</p>
+
+</div>
+
+
+'--------------------
+</div>
+
+</div>
+
+<footer>© 2026 Fennec Fast Mental Arithmetic</footer>
 </div>
 
 </body>
