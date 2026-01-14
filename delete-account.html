@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Account Deletion – FAST Fennec</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Simple animation -->
+  <style>
+    .fade-in {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white shadow-xl rounded-2xl p-6 max-w-xl w-full fade-in">
+
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-6">
+      <h1 class="text-2xl font-bold text-gray-800">
+        FAST Fennec
+      </h1>
+
+      <!-- Language Switch -->
+      <div class="flex gap-2">
+        <img src="en.png" alt="English" class="w-8 h-8 cursor-pointer hover:scale-110 transition"
+             onclick="setLang('en')">
+        <img src="ar.png" alt="Arabic" class="w-8 h-8 cursor-pointer hover:scale-110 transition"
+             onclick="setLang('ar')">
+      </div>
+    </div>
+
+    <!-- English Content -->
+    <div id="content-en">
+      <h2 class="text-xl font-semibold mb-3">Account Deletion</h2>
+
+      <p class="text-gray-700 mb-4">
+        This page explains how users of the <strong>FAST Fennec – Japanese Abacus Training</strong>
+        app can delete their account and associated data.
+      </p>
+
+      <h3 class="font-semibold mb-2">How to delete your account</h3>
+      <ol class="list-decimal list-inside text-gray-700 mb-4">
+        <li>Open the FAST Fennec app</li>
+        <li>Go to <strong>Profile</strong></li>
+        <li>Tap <strong>Delete Account</strong></li>
+        <li>Confirm the deletion</li>
+      </ol>
+
+      <h3 class="font-semibold mb-2">Data deleted</h3>
+      <ul class="list-disc list-inside text-gray-700 mb-4">
+        <li>User account</li>
+        <li>Name</li>
+        <li>Email address</li>
+        <li>Training progress and results</li>
+      </ul>
+
+      <h3 class="font-semibold mb-2">Retention</h3>
+      <p class="text-gray-700">
+        All personal data is permanently deleted.  
+        Deletion is processed immediately or within <strong>30 days</strong>.
+      </p>
+    </div>
+
+    <!-- Arabic Content -->
+    <div id="content-ar" class="hidden text-right" dir="rtl">
+      <h2 class="text-xl font-semibold mb-3">حذف الحساب</h2>
+
+      <p class="text-gray-700 mb-4">
+        تشرح هذه الصفحة كيفية حذف حساب المستخدم وبياناته من تطبيق
+        <strong>FAST Fennec لتدريب العداد الياباني</strong>.
+      </p>
+
+      <h3 class="font-semibold mb-2">طريقة حذف الحساب</h3>
+      <ol class="list-decimal list-inside text-gray-700 mb-4">
+        <li>افتح تطبيق FAST Fennec</li>
+        <li>انتقل إلى <strong>الملف الشخصي</strong></li>
+        <li>اضغط على <strong>حذف الحساب</strong></li>
+        <li>قم بتأكيد عملية الحذف</li>
+      </ol>
+
+      <h3 class="font-semibold mb-2">البيانات التي يتم حذفها</h3>
+      <ul class="list-disc list-inside text-gray-700 mb-4">
+        <li>حساب المستخدم</li>
+        <li>الاسم</li>
+        <li>البريد الإلكتروني</li>
+        <li>نتائج وتقدم التدريب</li>
+      </ul>
+
+      <h3 class="font-semibold mb-2">الاحتفاظ بالبيانات</h3>
+      <p class="text-gray-700">
+        يتم حذف جميع البيانات الشخصية نهائيًا.  
+        تتم عملية الحذف فورًا أو خلال <strong>30 يومًا</strong>.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Language Script -->
+  <script>
+    function setLang(lang) {
+      document.getElementById("content-en").classList.add("hidden");
+      document.getElementById("content-ar").classList.add("hidden");
+
+      document.getElementById("content-" + lang).classList.remove("hidden");
+    }
+  </script>
+
+</body>
+</html>
