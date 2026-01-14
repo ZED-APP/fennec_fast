@@ -2,55 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Language Switch Example</title>
+  <title>Account Deletion – FAST Fennec</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .fade-in {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
+
 <body class="bg-gray-100 min-h-screen flex items-center justify-center">
 
-  <div class="bg-white shadow-xl rounded-2xl p-6 max-w-md w-full">
+  <div class="bg-white shadow-xl rounded-2xl p-6 max-w-xl w-full fade-in">
 
-    <!-- Language Buttons -->
-    <div class="flex gap-4 mb-6">
-      <button id="btn-en" class="flex items-center gap-2 px-4 py-2 bg-gray-200 rounded hover:bg-gray-300" onclick="setLang('en')">
-        <span>EN</span>
-        <img id="img-en" src="en.png" class="w-5 h-5 hidden">
-      </button>
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-6">
+      <h1 class="text-2xl font-bold text-gray-800">
+        FAST Fennec
+      </h1>
 
-      <button id="btn-ar" class="flex items-center gap-2 px-4 py-2 bg-gray-200 rounded hover:bg-gray-300" onclick="setLang('ar')">
-        <span>AR</span>
-        <img id="img-ar" src="ar.png" class="w-5 h-5 hidden">
-      </button>
+      <!-- Language Switch -->
+      <div class="flex gap-4 items-center">
+
+        <!-- EN -->
+        <button onclick="setLang('en')" class="flex items-center gap-2 font-semibold">
+          <span>EN</span>
+          <img id="img-en" src="en.png" class="w-6 h-6 hidden">
+        </button>
+
+        <!-- AR -->
+        <button onclick="setLang('ar')" class="flex items-center gap-2 font-semibold">
+          <span>AR</span>
+          <img id="img-ar" src="ar.png" class="w-6 h-6 hidden">
+        </button>
+
+      </div>
     </div>
 
     <!-- English Content -->
     <div id="content-en">
-      <h2 class="text-xl font-bold mb-2">Hello!</h2>
-      <p>This is English content. Switch to Arabic to see the other version.</p>
+      <h2 class="text-xl font-semibold mb-3">Account Deletion</h2>
+
+      <p class="text-gray-700 mb-4">
+        This page explains how users of the <strong>FAST Fennec – Japanese Abacus Training</strong>
+        app can delete their account and associated data.
+      </p>
+
+      <h3 class="font-semibold mb-2">How to delete your account</h3>
+      <ol class="list-decimal list-inside text-gray-700 mb-4">
+        <li>Open the FAST Fennec app</li>
+        <li>Go to <strong>Profile</strong></li>
+        <li>Tap <strong>Delete Account</strong></li>
+        <li>Confirm the deletion</li>
+      </ol>
+
+      <h3 class="font-semibold mb-2">Data deleted</h3>
+      <ul class="list-disc list-inside text-gray-700 mb-4">
+        <li>User account</li>
+        <li>Name</li>
+        <li>Email address</li>
+        <li>Training progress and results</li>
+      </ul>
+
+      <h3 class="font-semibold mb-2">Retention</h3>
+      <p class="text-gray-700">
+        All personal data is permanently deleted.  
+        Deletion is processed immediately or within <strong>30 days</strong>.
+      </p>
     </div>
 
     <!-- Arabic Content -->
     <div id="content-ar" class="hidden text-right" dir="rtl">
-      <h2 class="text-xl font-bold mb-2">مرحبا!</h2>
-      <p>هذا هو المحتوى باللغة العربية. اضغط على EN للعودة للغة الإنجليزية.</p>
+      <h2 class="text-xl font-semibold mb-3">حذف الحساب</h2>
+
+      <p class="text-gray-700 mb-4">
+        تشرح هذه الصفحة كيفية حذف حساب المستخدم وبياناته من تطبيق
+        <strong>FAST Fennec لتدريب العداد الياباني</strong>.
+      </p>
+
+      <h3 class="font-semibold mb-2">طريقة حذف الحساب</h3>
+      <ol class="list-decimal list-inside text-gray-700 mb-4">
+        <li>افتح تطبيق FAST Fennec</li>
+        <li>انتقل إلى <strong>الملف الشخصي</strong></li>
+        <li>اضغط على <strong>حذف الحساب</strong></li>
+        <li>قم بتأكيد عملية الحذف</li>
+      </ol>
+
+      <h3 class="font-semibold mb-2">البيانات التي يتم حذفها</h3>
+      <ul class="list-disc list-inside text-gray-700 mb-4">
+        <li>حساب المستخدم</li>
+        <li>الاسم</li>
+        <li>البريد الإلكتروني</li>
+        <li>نتائج وتقدم التدريب</li>
+      </ul>
+
+      <h3 class="font-semibold mb-2">الاحتفاظ بالبيانات</h3>
+      <p class="text-gray-700">
+        يتم حذف جميع البيانات الشخصية نهائيًا.  
+        تتم عملية الحذف فورًا أو خلال <strong>30 يومًا</strong>.
+      </p>
     </div>
 
   </div>
 
+  <!-- Language Script -->
   <script>
     function setLang(lang) {
-      // Show content
+      // content
       document.getElementById("content-en").classList.add("hidden");
       document.getElementById("content-ar").classList.add("hidden");
       document.getElementById("content-" + lang).classList.remove("hidden");
 
-      // Show image only for selected button
+      // images
       document.getElementById("img-en").classList.add("hidden");
       document.getElementById("img-ar").classList.add("hidden");
       document.getElementById("img-" + lang).classList.remove("hidden");
     }
 
-    // Set default
+    // default language
     setLang("en");
   </script>
 
