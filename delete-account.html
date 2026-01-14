@@ -8,7 +8,6 @@
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Simple animation -->
   <style>
     .fade-in {
       animation: fadeIn 0.8s ease-in-out;
@@ -31,11 +30,20 @@
       </h1>
 
       <!-- Language Switch -->
-      <div class="flex gap-2">
-        <img src="en.png" alt="English" class="w-8 h-8 cursor-pointer hover:scale-110 transition"
-             onclick="setLang('en')">
-        <img src="ar.png" alt="Arabic" class="w-8 h-8 cursor-pointer hover:scale-110 transition"
-             onclick="setLang('ar')">
+      <div class="flex gap-4 items-center">
+
+        <!-- EN -->
+        <button onclick="setLang('en')" class="flex items-center gap-2 font-semibold">
+          <span>EN</span>
+          <img id="img-en" src="en.png" class="w-6 h-6 hidden">
+        </button>
+
+        <!-- AR -->
+        <button onclick="setLang('ar')" class="flex items-center gap-2 font-semibold">
+          <span>AR</span>
+          <img id="img-ar" src="ar.png" class="w-6 h-6 hidden">
+        </button>
+
       </div>
     </div>
 
@@ -108,11 +116,19 @@
   <!-- Language Script -->
   <script>
     function setLang(lang) {
+      // content
       document.getElementById("content-en").classList.add("hidden");
       document.getElementById("content-ar").classList.add("hidden");
-
       document.getElementById("content-" + lang).classList.remove("hidden");
+
+      // images
+      document.getElementById("img-en").classList.add("hidden");
+      document.getElementById("img-ar").classList.add("hidden");
+      document.getElementById("img-" + lang).classList.remove("hidden");
     }
+
+    // default language
+    setLang("en");
   </script>
 
 </body>
