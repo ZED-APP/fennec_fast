@@ -34,12 +34,12 @@ h1 {
     text-align: center;
     color: #666;
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 h2 {
     border-bottom: 2px solid #eaeaea;
     padding-bottom: 6px;
-    margin-top: 24px;
+    margin-top: 28px;
     font-size: 20px;
 }
 ul { padding-left: 20px; }
@@ -59,33 +59,19 @@ ul { padding-left: 20px; }
     direction: rtl;
     text-align: right;
 }
+.divider {
+    text-align: center;
+    margin: 40px 0;
+    color: #999;
+    font-size: 18px;
+}
 footer {
     text-align: center;
     color: #888;
     font-size: 13px;
     margin-top: 20px;
 }
-.lang-btns {
-    text-align: center;
-    margin-bottom: 15px;
-}
-.lang-btns button {
-    padding: 6px 12px;
-    margin: 0 5px;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-}
 </style>
-
-<script>
-function setLang(lang) {
-    document.getElementById("english").style.display = (lang === "en") ? "block" : "none";
-    document.getElementById("arabic").style.display  = (lang === "ar") ? "block" : "none";
-    document.body.dir = (lang === "ar") ? "rtl" : "ltr";
-}
-window.onload = () => setLang("en");
-</script>
 </head>
 
 <body>
@@ -99,13 +85,7 @@ window.onload = () => setLang("en");
     Last updated: 14/01/2026
 </div>
 
-<div class="lang-btns">
-    <button onclick="setLang('en')">English</button>
-    <button onclick="setLang('ar')">العربية</button>
-</div>
-
 <!-- ================= English ================= -->
-<div id="english">
 
 <h2>Introduction</h2>
 <p>
@@ -126,42 +106,69 @@ to protecting personal data.
 This application is not intended for children under the age of 13.
 </p>
 <ul>
-<li>No data collected from children under 13.</li>
-<li>Immediate deletion if discovered.</li>
-<li>No ads or tracking for children.</li>
+<li>No data is knowingly collected from children under 13.</li>
+<li>If discovered, the data is deleted immediately.</li>
+<li>No advertising, tracking, or profiling of children.</li>
 </ul>
 
 <div class="note">❗ We do not collect or store user photos.</div>
 
 <h2>Training Data</h2>
 <ul>
-<li>Training settings</li>
-<li>Training results</li>
+<li>Training settings sent by trainers</li>
+<li>Training results (speed, accuracy, exercises)</li>
 </ul>
 
 <h2>Contact Us</h2>
 <p class="email">📧 gamesinogh@gmail.com</p>
 
-</div>
+<div class="divider">— العربية —</div>
 
 <!-- ================= Arabic ================= -->
-<div id="arabic" class="rtl" style="display:none;">
+
+<div class="rtl">
 
 <h2>مقدمة</h2>
 <p>
-نحن في <strong>الفنك السريع للحساب الذهني</strong> نحترم خصوصية المستخدمين.
+نحن في <strong>الفنك السريع للحساب الذهني</strong> نحترم خصوصية المستخدمين
+ونلتزم بحماية بياناتهم الشخصية.
 </p>
 
 <h2>المعلومات التي نقوم بجمعها</h2>
 <ul>
-<li>الاسم</li>
+<li>الاسم أو اسم المستخدم</li>
 <li>البريد الإلكتروني</li>
-<li>نوع الحساب</li>
-<li>تاريخ الميلاد</li>
+<li>نوع الحساب (مدرب / متدرب)</li>
+<li>تاريخ ميلاد المتدرب</li>
 </ul>
 
-<h2>سياسة الأطفال</h2>
+<h2>سياسة الأطفال والعائلة</h2>
+<p>
+هذا التطبيق غير مخصص للأطفال دون سن 13 عامًا.
+</p>
 <ul>
-<li>غير مخصص للأطفال دون 13 سنة.</li>
-<li>يتم حذف أي بيانات فورًا.</li>
-<li>لا إعلانات ولا
+<li>لا نقوم عن قصد بجمع بيانات من الأطفال دون 13 سنة.</li>
+<li>في حال اكتشاف ذلك، يتم حذف البيانات فورًا.</li>
+<li>لا يتم عرض إعلانات أو تنفيذ أي تتبع للأطفال.</li>
+</ul>
+
+<div class="note">❗ لا نقوم بجمع أو تخزين صور المستخدمين.</div>
+
+<h2>بيانات التمارين</h2>
+<ul>
+<li>إعدادات التمارين المرسلة من المدربين</li>
+<li>نتائج التمارين (السرعة، الدقة، عدد التمارين)</li>
+</ul>
+
+<h2>التواصل معنا</h2>
+<p class="email">📧 gamesinogh@gmail.com</p>
+
+</div>
+
+</div>
+
+<footer>© 2026 Fennec Fast Mental Arithmetic</footer>
+</div>
+
+</body>
+</html>
