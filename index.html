@@ -6,114 +6,86 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-    body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-        background: #f4f6f8;
-        color: #222;
-        line-height: 1.7;
-    }
-
-    .container {
-        max-width: 900px;
-        margin: auto;
-        padding: 20px;
-    }
-
-    .card {
-        background: #ffffff;
-        border-radius: 12px;
-        padding: 24px;
-        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-        margin-bottom: 24px;
-    }
-
-    h1 {
-        text-align: center;
-        margin-bottom: 10px;
-        font-size: 26px;
-    }
-
-    .subtitle {
-        text-align: center;
-        color: #666;
-        font-size: 14px;
-        margin-bottom: 20px;
-    }
-
-    h2 {
-        border-bottom: 2px solid #eaeaea;
-        padding-bottom: 6px;
-        margin-top: 24px;
-        font-size: 20px;
-    }
-
-    ul {
-        padding-left: 20px;
-    }
-
-    .note {
-        background: #fff3cd;
-        border-left: 4px solid #ffcc00;
-        padding: 12px;
-        margin: 16px 0;
-        border-radius: 6px;
-        font-size: 14px;
-    }
-
-    .email {
-        font-weight: bold;
-        color: #0a58ca;
-    }
-
-    .divider {
-        text-align: center;
-        margin: 40px 0;
-        font-size: 18px;
-        color: #999;
-    }
-
-    .rtl {
-        direction: rtl;
-        text-align: right;
-    }
-
-    footer {
-        text-align: center;
-        color: #888;
-        font-size: 13px;
-        margin-top: 20px;
-    }
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.7;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+h2 {
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 6px;
+    margin-top: 24px;
+    font-size: 20px;
+}
+ul { padding-left: 20px; }
+.note {
+    background: #fff3cd;
+    border-left: 4px solid #ffcc00;
+    padding: 12px;
+    margin: 16px 0;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.email {
+    font-weight: bold;
+    color: #0a58ca;
+}
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.lang-btns {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.lang-btns button {
+    padding: 6px 12px;
+    margin: 0 5px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
 </style>
 
 <script>
 function setLang(lang) {
-    const ar = document.getElementById("arabic");
-    const en = document.getElementById("english");
-
-    if (lang === "ar") {
-        ar.style.display = "block";
-        en.style.display = "none";
-        document.body.dir = "rtl";
-        ar.scrollIntoView();
-    } else {
-        ar.style.display = "none";
-        en.style.display = "block";
-        document.body.dir = "ltr";
-        en.scrollIntoView();
-    }
+    document.getElementById("english").style.display = (lang === "en") ? "block" : "none";
+    document.getElementById("arabic").style.display  = (lang === "ar") ? "block" : "none";
+    document.body.dir = (lang === "ar") ? "rtl" : "ltr";
 }
-
-// auto-detect hash (#arabic or #english)
-window.onload = function () {
-    if (location.hash === "#english") {
-        setLang("en");
-    } else {
-        setLang("ar");
-    }
-};
+window.onload = () => setLang("en");
 </script>
-
 </head>
 
 <body>
@@ -127,6 +99,10 @@ window.onload = function () {
     Last updated: 14/01/2026
 </div>
 
+<div class="lang-btns">
+    <button onclick="setLang('en')">English</button>
+    <button onclick="setLang('ar')">العربية</button>
+</div>
 
 <!-- ================= English ================= -->
 <div id="english">
@@ -148,111 +124,44 @@ to protecting personal data.
 <h2>Children & Family Policy</h2>
 <p>
 This application is not intended for children under the age of 13.
-Users must be at least 13 years old to create an account and use the app.
 </p>
 <ul>
-<li>We do not knowingly collect personal data from children under 13.</li>
-<li>If we become aware that a child under 13 has provided personal data, we will delete it immediately.</li>
-<li>No advertising, tracking, or profiling of children is performed.</li>
+<li>No data collected from children under 13.</li>
+<li>Immediate deletion if discovered.</li>
+<li>No ads or tracking for children.</li>
 </ul>
-
 
 <div class="note">❗ We do not collect or store user photos.</div>
 
 <h2>Training Data</h2>
 <ul>
-<li>Training settings sent by trainers</li>
-<li>Training results (speed, accuracy, exercises)</li>
+<li>Training settings</li>
+<li>Training results</li>
 </ul>
-
-<h2>Information We Do Not Collect</h2>
-<ul>
-<li>Photos</li>
-<li>Chat messages</li>
-<li>Contacts</li>
-<li>Location data</li>
-<li>Sensitive personal data</li>
-</ul>
-
-<h2>Data Storage & Security</h2>
-<p>
-Data is stored using Firebase Realtime Database and/or Firestore and protected
-with Firebase Security Rules.
-</p>
 
 <h2>Contact Us</h2>
 <p class="email">📧 gamesinogh@gmail.com</p>
-"-----------------
 
+</div>
 
 <!-- ================= Arabic ================= -->
-<h1 id="arabic">Privacy Policy | سياسة الخصوصية</h1>
-<div class="subtitle" >
-    Fennec Fast Mental Arithmetic<br>
-    Last updated: 14/01/2026
-</div>
-<div  class="rtl">
+<div id="arabic" class="rtl" style="display:none;">
 
 <h2>مقدمة</h2>
 <p>
-نحن في <strong>الفنك السريع للحساب الذهني</strong> نحترم خصوصية المستخدمين
-ونلتزم بحماية بياناتهم الشخصية.
+نحن في <strong>الفنك السريع للحساب الذهني</strong> نحترم خصوصية المستخدمين.
 </p>
 
 <h2>المعلومات التي نقوم بجمعها</h2>
 <ul>
-<li>الاسم أو اسم المستخدم</li>
+<li>الاسم</li>
 <li>البريد الإلكتروني</li>
-<li>نوع الحساب (مدرب / متدرب)</li>
-<li>تاريخ ميلاد المتدرب</li>
+<li>نوع الحساب</li>
+<li>تاريخ الميلاد</li>
 </ul>
 
-<h2>سياسة العائلة والأطفال</h2>
-<p>
-هذا التطبيق غير مخصص للأطفال دون سن 13 عامًا.
-يجب أن يكون عمر المستخدم 13 سنة على الأقل لإنشاء حساب واستخدام التطبيق.
-</p>
+<h2>سياسة الأطفال</h2>
 <ul>
-<li>لا نقوم عن قصد بجمع أي بيانات شخصية من الأطفال دون سن 13.</li>
-<li>في حال اكتشاف أن طفلًا دون 13 سنة قد قدم بيانات شخصية، سيتم حذفها فورًا.</li>
-<li>لا يتم عرض إعلانات أو تنفيذ أي تتبع أو تحليل سلوكي للأطفال.</li>
-</ul>
-
-<div class="note">❗ لا نقوم بجمع أو تخزين صور المستخدمين.</div>
-
-<h2>بيانات التمارين</h2>
-<ul>
-<li>إعدادات التمارين التي يرسلها المدرب</li>
-<li>نتائج التمارين (السرعة، الدقة، عدد التمارين)</li>
-</ul>
-
-<h2>ما لا نقوم بجمعه</h2>
-<ul>
-<li>الصور</li>
-<li>المحادثات أو الرسائل</li>
-<li>الموقع الجغرافي</li>
-<li>البيانات الحساسة</li>
-</ul>
-
-<h2>التخزين والحماية</h2>
-<p>
-يتم تخزين البيانات باستخدام Firebase Realtime Database و/أو Firestore
-مع تطبيق قواعد أمان Firebase.
-</p>
-
-<h2>التواصل معنا</h2>
-<p class="email">📧 gamesinogh@gmail.com</p>
-
-</div>
-
-
-'--------------------
-</div>
-
-</div>
-
-<footer>© 2026 Fennec Fast Mental Arithmetic</footer>
-</div>
-
-</body>
-</html>
+<li>غير مخصص للأطفال دون 13 سنة.</li>
+<li>يتم حذف أي بيانات فورًا.</li>
+<li>لا إعلانات ولا
