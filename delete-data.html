@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Data Deletion Request | Zed Soroban</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Simple animation -->
+  <style>
+    .fade-in {
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+  <div class="bg-white max-w-4xl w-full rounded-2xl shadow-xl p-6 fade-in">
+
+    <!-- Language Switch -->
+    <div class="flex justify-end gap-2 mb-4">
+      <button onclick="setLang('en')" class="px-3 py-1 bg-blue-500 text-white rounded">EN</button>
+      <button onclick="setLang('ar')" class="px-3 py-1 bg-green-600 text-white rounded">AR</button>
+    </div>
+
+    <!-- ENGLISH -->
+    <div id="content-en">
+      <h1 class="text-3xl font-bold mb-4 text-gray-800">
+        Request Data Deletion
+      </h1>
+
+      <p class="text-gray-700 mb-4">
+        Zed Soroban respects your privacy. You can request the deletion of
+        part or all of your personal data <strong>without deleting your account</strong>.
+      </p>
+
+      <ul class="list-disc pl-6 text-gray-700 mb-6">
+        <li>User progress and activity data</li>
+        <li>Stored preferences</li>
+        <li>Temporary learning data</li>
+      </ul>
+
+      <p class="text-gray-700 mb-4">
+        To request data deletion, please contact us using the email below and
+        specify what data you want to remove.
+      </p>
+
+      <p class="font-semibold text-blue-600 mb-6">
+        📧 Email: support@zedsoroban.com
+      </p>
+
+      <!-- Screenshot -->
+      <h2 class="text-xl font-semibold mb-3">Example in the App</h2>
+      <img
+        src="screenshot.png"
+        alt="App Screenshot"
+        class="rounded-xl shadow-md w-full max-w-md"
+      />
+    </div>
+
+    <!-- ARABIC -->
+    <div id="content-ar" class="hidden" dir="rtl">
+      <h1 class="text-3xl font-bold mb-4 text-gray-800">
+        طلب حذف البيانات
+      </h1>
+
+      <p class="text-gray-700 mb-4">
+        يحترم تطبيق زيد سوروبان خصوصيتك. يمكنك طلب حذف جزء أو كل بياناتك
+        <strong>دون الحاجة إلى حذف حسابك</strong>.
+      </p>
+
+      <ul class="list-disc pr-6 text-gray-700 mb-6">
+        <li>بيانات التقدم والنشاط</li>
+        <li>الإعدادات المحفوظة</li>
+        <li>بيانات التعلم المؤقتة</li>
+      </ul>
+
+      <p class="text-gray-700 mb-4">
+        لطلب حذف البيانات، يرجى التواصل معنا عبر البريد الإلكتروني التالي
+        مع تحديد البيانات التي ترغب في حذفها.
+      </p>
+
+      <p class="font-semibold text-green-600 mb-6">
+        📧 البريد الإلكتروني: support@zedsoroban.com
+      </p>
+
+      <!-- Screenshot -->
+      <h2 class="text-xl font-semibold mb-3">مثال من داخل التطبيق</h2>
+      <img
+        src="screenshot.png"
+        alt="لقطة شاشة من التطبيق"
+        class="rounded-xl shadow-md w-full max-w-md"
+      />
+    </div>
+
+  </div>
+
+  <script>
+    function setLang(lang) {
+      const en = document.getElementById("content-en");
+      const ar = document.getElementById("content-ar");
+
+      if (lang === "ar") {
+        en.classList.add("hidden");
+        ar.classList.remove("hidden");
+        document.documentElement.lang = "ar";
+        document.documentElement.dir = "rtl";
+      } else {
+        ar.classList.add("hidden");
+        en.classList.remove("hidden");
+        document.documentElement.lang = "en";
+        document.documentElement.dir = "ltr";
+      }
+    }
+  </script>
+
+</body>
+</html>
