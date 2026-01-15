@@ -2,16 +2,16 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
-  <title>Data Deletion Request | Zed Soroban</title>
+  <title>Data Deletion | Fennec Fast Mental Arithmetic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Tailwind CSS CDN -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Simple animation -->
+  <!-- Animations -->
   <style>
-    .fade-in {
-      animation: fadeIn 1s ease-in-out forwards;
+    .fade {
+      animation: fadeIn 1s ease-out forwards;
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
@@ -22,100 +22,101 @@
 
 <body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
 
-  <div class="bg-white max-w-4xl w-full rounded-2xl shadow-xl p-6 fade-in">
+  <div class="bg-white max-w-4xl w-full rounded-2xl shadow-xl p-6 fade">
 
     <!-- Language Switch -->
-    <div class="flex justify-end gap-2 mb-4">
-      <button onclick="setLang('en')" class="px-3 py-1 bg-blue-500 text-white rounded">EN</button>
-      <button onclick="setLang('ar')" class="px-3 py-1 bg-green-600 text-white rounded">AR</button>
+    <div class="flex justify-end gap-2 mb-6">
+      <button onclick="setLang('en')" class="px-4 py-1 bg-blue-600 text-white rounded-lg">EN</button>
+      <button onclick="setLang('ar')" class="px-4 py-1 bg-green-600 text-white rounded-lg">AR</button>
     </div>
 
-    <!-- ENGLISH -->
-    <div id="content-en">
+    <!-- ENGLISH CONTENT -->
+    <div id="en">
       <h1 class="text-3xl font-bold mb-4 text-gray-800">
-        Request Data Deletion
+        Data Deletion – Fennec Fast Mental Arithmetic
       </h1>
 
       <p class="text-gray-700 mb-4">
-        Zed Soroban respects your privacy. You can request the deletion of
-        part or all of your personal data <strong>without deleting your account</strong>.
+        Fennec Fast Mental Arithmetic gives users full control over their data.
+        You can delete your results <strong>without deleting your account</strong>,
+        directly from inside the app.
       </p>
 
-      <ul class="list-disc pl-6 text-gray-700 mb-6">
-        <li>User progress and activity data</li>
-        <li>Stored preferences</li>
-        <li>Temporary learning data</li>
-      </ul>
+      <h2 class="text-xl font-semibold mb-3">How to delete your results</h2>
+
+      <ol class="list-decimal pl-6 text-gray-700 mb-6 space-y-1">
+        <li>Open the <strong>Fennec Fast Mental Arithmetic</strong> app</li>
+        <li>Go to the <strong>Results</strong> page</li>
+        <li>Click the <strong>(⋮)</strong> button</li>
+        <li>Select one of the following options:
+          <ul class="list-disc pl-6 mt-1">
+            <li>General normal results</li>
+            <li>My team results</li>
+          </ul>
+        </li>
+        <li>Click on <strong>Remove</strong> to clear your results</li>
+      </ol>
 
       <p class="text-gray-700 mb-4">
-        To request data deletion, please contact us using the email below and
-        specify what data you want to remove.
-      </p>
-
-      <p class="font-semibold text-blue-600 mb-6">
-        📧 Email: support@zedsoroban.com
+        This action permanently deletes the selected results from our system.
       </p>
 
       <!-- Screenshot -->
-      <h2 class="text-xl font-semibold mb-3">Example in the App</h2>
-      <img
-        src="screenshot.png"
-        alt="App Screenshot"
-        class="rounded-xl shadow-md w-full max-w-md"
-      />
+      <h2 class="text-xl font-semibold mb-3">Example screen</h2>
+      <img src="screenshot.png" alt="App screenshot"
+           class="rounded-xl shadow-md w-full max-w-md">
     </div>
 
-    <!-- ARABIC -->
-    <div id="content-ar" class="hidden" dir="rtl">
+    <!-- ARABIC CONTENT -->
+    <div id="ar" class="hidden" dir="rtl">
       <h1 class="text-3xl font-bold mb-4 text-gray-800">
-        طلب حذف البيانات
+        حذف البيانات – Fennec Fast Mental Arithmetic
       </h1>
 
       <p class="text-gray-700 mb-4">
-        يحترم تطبيق زيد سوروبان خصوصيتك. يمكنك طلب حذف جزء أو كل بياناتك
-        <strong>دون الحاجة إلى حذف حسابك</strong>.
+        يتيح تطبيق فينيك الحساب الذهني السريع للمستخدمين التحكم الكامل في بياناتهم.
+        يمكنك حذف نتائجك <strong>دون حذف حسابك</strong> مباشرة من داخل التطبيق.
       </p>
 
-      <ul class="list-disc pr-6 text-gray-700 mb-6">
-        <li>بيانات التقدم والنشاط</li>
-        <li>الإعدادات المحفوظة</li>
-        <li>بيانات التعلم المؤقتة</li>
-      </ul>
+      <h2 class="text-xl font-semibold mb-3">خطوات حذف النتائج</h2>
+
+      <ol class="list-decimal pr-6 text-gray-700 mb-6 space-y-1">
+        <li>افتح تطبيق <strong>Fennec Fast Mental Arithmetic</strong></li>
+        <li>انتقل إلى صفحة <strong>النتائج</strong></li>
+        <li>اضغط على زر <strong>(⋮)</strong></li>
+        <li>اختر أحد الخيارين:
+          <ul class="list-disc pr-6 mt-1">
+            <li>النتائج العامة العادية</li>
+            <li>نتائج فريقي</li>
+          </ul>
+        </li>
+        <li>اضغط على <strong>حذف</strong> لمسح النتائج</li>
+      </ol>
 
       <p class="text-gray-700 mb-4">
-        لطلب حذف البيانات، يرجى التواصل معنا عبر البريد الإلكتروني التالي
-        مع تحديد البيانات التي ترغب في حذفها.
-      </p>
-
-      <p class="font-semibold text-green-600 mb-6">
-        📧 البريد الإلكتروني: support@zedsoroban.com
+        سيتم حذف النتائج المختارة نهائيًا من النظام.
       </p>
 
       <!-- Screenshot -->
-      <h2 class="text-xl font-semibold mb-3">مثال من داخل التطبيق</h2>
-      <img
-        src="screenshot.png"
-        alt="لقطة شاشة من التطبيق"
-        class="rounded-xl shadow-md w-full max-w-md"
-      />
+      <h2 class="text-xl font-semibold mb-3">مثال من التطبيق</h2>
+      <img src="screenshot.png" alt="لقطة شاشة"
+           class="rounded-xl shadow-md w-full max-w-md">
     </div>
 
   </div>
 
   <script>
     function setLang(lang) {
-      const en = document.getElementById("content-en");
-      const ar = document.getElementById("content-ar");
+      const en = document.getElementById("en");
+      const ar = document.getElementById("ar");
 
       if (lang === "ar") {
         en.classList.add("hidden");
         ar.classList.remove("hidden");
-        document.documentElement.lang = "ar";
         document.documentElement.dir = "rtl";
       } else {
         ar.classList.add("hidden");
         en.classList.remove("hidden");
-        document.documentElement.lang = "en";
         document.documentElement.dir = "ltr";
       }
     }
